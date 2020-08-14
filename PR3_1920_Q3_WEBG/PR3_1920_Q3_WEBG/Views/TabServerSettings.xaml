@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PR3_1920_Q3_WEBG.Views.TabServerSettings">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" Spacing="10" Margin="10,10,10,10">
+            <Label  Text="TTN app key : " FontAttributes="Bold" />
+            <Entry  x:Name="TtnAppKey" ></Entry>
+            <Label  Text="URL d'un requête Swagger par défaut (sans paramètre de temps) : " FontAttributes="Bold" />
+            <Entry  x:Name="swaggerQueryBase" ></Entry>
+            <Label  Text="Paramètre de temps de la requète (*/s/m/h/d format ex: '60s' pour 60 secondes ) : " FontAttributes="Bold" />
+            <Entry  x:Name="swaggerQueryTime" ></Entry>
+            <Button x:Name="ValidationButton" VerticalOptions="End" Clicked="ValidationButton_Clicked" Text="Validation"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

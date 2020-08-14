@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PR3_1920_Q3_WEBG.Views.MenuPage">
+    <NavigationPage.TitleView >        
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="15*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Grid.Row="0" Source="icon_weber2.png" HeightRequest="30" Margin="10" Aspect="AspectFit"/>
+            <Label Grid.Column="1" Grid.Row="0" Style="{StaticResource Title}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>        
+        <FlexLayout Direction="Column" JustifyContent="Center" AlignItems="Center">
+                  <Button Margin="0,20,0,0" Text="Données" Style="{StaticResource buttonMenuStyle}"  HorizontalOptions="Center"  Clicked="DataButtonClicked" />
+                  <Button Margin="0,20,0,0" Text="Paramètres" Style="{StaticResource buttonMenuStyle}" BackgroundColor="DarkOrange"  HorizontalOptions="Center"  Clicked="SettingButtonClicked" />
+        </FlexLayout>
+ 
+    </ContentPage.Content>
+</ContentPage>

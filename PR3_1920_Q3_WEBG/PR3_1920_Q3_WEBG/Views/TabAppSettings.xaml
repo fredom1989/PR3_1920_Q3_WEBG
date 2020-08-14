@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PR3_1920_Q3_WEBG.Views.TabAppSettings">
+    <ContentPage.Content>
+            <StackLayout x:Name="MyStackLayout" Orientation="Vertical" HorizontalOptions="Center" Spacing="10" Margin="10,10,10,10">
+                <Label  Text="Limite des valeurs OK (point de danger) : " FontAttributes="Bold" />
+                <Entry  x:Name="OkValueEntry" TextColor="Black" Keyboard="Numeric"></Entry>
+                <Label  Text="Limite (nombre entier) des valeurs DANGER (point d'alerte) : " FontAttributes="Bold" />
+                <Entry  x:Name="DangerValueEntry" TextColor="Black" Keyboard="Numeric"></Entry>
+                <Button x:Name="ValidationButton" VerticalOptions="End" Clicked="ValidationButton_Clicked" Text="Validation"/>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

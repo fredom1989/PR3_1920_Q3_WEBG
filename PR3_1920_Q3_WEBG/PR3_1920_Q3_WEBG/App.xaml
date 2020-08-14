@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PR3_1920_Q3_WEBG.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style  TargetType="Button">
+                <Setter Property="BackgroundColor" Value="LightGreen" />
+                <Setter Property="Text" Value="Validation" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+                <Style x:Key="buttonMenuStyle" TargetType="Button">
+                    <Setter Property="BackgroundColor" Value="DarkRed" />
+                    <Setter Property="TextColor" Value="White" />
+                    <Setter Property="WidthRequest" Value="250"></Setter>
+                </Style>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                </Style>            
+                    <Style x:Key="Title" TargetType="Label">
+                        <Setter Property="TextColor" Value="White"/>
+                        <Setter Property="Text" Value="Connected humidity sensor"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    <Setter Property="VerticalOptions" Value="Center"/>
+                </Style>
+            <Style TargetType="NavigationPage" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="#f4efef" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
